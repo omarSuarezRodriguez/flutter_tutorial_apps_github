@@ -3,7 +3,7 @@
 
 import 'package:flutter/material.dart';
 import '../src/basics_screen/basics_screen.dart';
-import '../src/projects_screen/projects_screen.dart';
+
 import '../src/routes/routes.dart';
 import '../src/widgets_screen/widgets_screen.dart';
 
@@ -96,9 +96,8 @@ class _MyAppState extends State<MyApp> {
       case 0:
         return BasicsScreen(showNavBottomBar: showNavBarExample);
       case 1:
-        return ProjectsScreen(showNavBottomBar: showNavBarExample);
-      case 2:
         return WidgetsScreen(showNavBottomBar: showNavBarExample);
+      
       default:
         return BasicsScreen(showNavBottomBar: showNavBarExample);
     }

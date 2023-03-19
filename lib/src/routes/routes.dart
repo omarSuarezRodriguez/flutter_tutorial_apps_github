@@ -67,31 +67,6 @@ import 'package:flutter_tutorial_apps_github/src/basics_screen/pages/97_safe_are
 import 'package:flutter_tutorial_apps_github/src/basics_screen/pages/98_padding_example.dart';
 import 'package:flutter_tutorial_apps_github/src/basics_screen/pages/99_color_filtered_example.dart';
 
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/05_barcode_scan_app/main.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/06_android_messages_app/main.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/07_credit_card_concept_app/credit_cards_concept_page.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/08_movies_concept_app/movies_concept_page.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/09_shoes_concept_app/shoes_store_page.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/10_sports_store_concept_app/sports_store_page.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/11_travel_concept_app/travel_concept_page.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/12_read_more_app/main.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/13_get_storage_app/main.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/14_neon_button_app/neon_button_main.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/15_menu_exploration_app/main_menu_exploration.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/16_turn_on_the_light_app/turn_on_the_light.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/17_split_widget_example_app/main_split_widget.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/18_tabbar_persistent_example/main_persistent_tabbar.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/19_collapsing_toolbar_example/main_collapsing_toolbar.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/20_communication_widgets_example/main_fetch_data.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/21_twitter_profile_example/twitter_profile_page.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/22_like_button_animations_example/main.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/23_slidable_list_tile_example/main.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/24_bottom_tab_bar_example/main.dart';
-
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/25_hidable_bottom_bar_example/main.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/26_dialogs_and_time_example/main.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/27_bottom_navigation_bar_example/main.dart';
-import 'package:flutter_tutorial_apps_github/src/projects_screen/projects/28_animations_pages_example/main.dart';
 import '../../src/basics_screen/pages/20_tabs.dart';
 import '../../src/basics_screen/pages/22_bottom_tab_bar.dart';
 import '../basics_screen/pages/23_opacity_example.dart';
@@ -151,10 +126,6 @@ import '../../src/basics_screen/pages/77_grid_image_example.dart';
 import '../../src/basics_screen/pages/78_image_with_title_and_bottom.dart';
 import '../../src/basics_screen/pages/79_animated_container_example.dart';
 import '../../src/basics_screen/pages/80_animated_list_example.dart';
-import '../../src/projects_screen/projects/01_login_01/01_login_screen_01.dart';
-import '../../src/projects_screen/projects/02_login_02/02_login_screen_02.dart';
-import '../../src/projects_screen/projects/03_communication_between_widgets/main.dart';
-import '../../src/projects_screen/projects/04_hero_animations/main.dart';
 
 import '../../src/widgets_screen/pages/03_circle_avatar.dart';
 import '../../src/widgets_screen/pages/04_toggle_buttons.dart';
@@ -200,7 +171,6 @@ import '../widgets_screen/pages/01_icon.dart';
 import '../widgets_screen/pages/02_text.dart';
 
 
-import '../projects_screen/projects_screen.dart';
 
 
 Map<String, WidgetBuilder> getApplicationRoutes() {
@@ -407,35 +377,6 @@ Map<String, WidgetBuilder> getApplicationRoutes() {
     
 
 
-    '/projects_screen'     : (BuildContext context) => const ProjectsScreen(showNavBottomBar: true),
-    '/projects_01'         : (BuildContext context) => const LoginScreen1Example(),
-    '/projects_02'         : (BuildContext context) => const LoginScreen2Example(),
-    '/projects_03'         : (BuildContext context) => MainCommunicationWidgets(),
-    '/projects_04'         : (BuildContext context) => MainHeroAnimationsPage(),
-    '/projects_05'         : (BuildContext context) => const BarcodeScanExample(),
-    '/projects_06'         : (BuildContext context) => const AndroidMessagesPage(),
-    '/projects_07'         : (BuildContext context) => CreditCardConceptPage(),
-    '/projects_08'         : (BuildContext context) => const MoviesConceptPage(),
-    '/projects_09'         : (BuildContext context) => const ShoesStorePageExample(),
-    '/projects_10'         : (BuildContext context) => const SportsStorePageExample(),
-    '/projects_11'         : (BuildContext context) => const TravelConceptPageExample(),
-    '/projects_12'         : (BuildContext context) => const ReadMoreAppExample(),
-    '/projects_13'         : (BuildContext context) => const GetStorageAppExample(),
-    '/projects_14'         : (BuildContext context) => const NeonButonMainExample(),
-    '/projects_15'         : (BuildContext context) => const MainMenuExplorationExample(),
-    '/projects_16'         : (BuildContext context) => const TurnOnTheLightExample(),
-    '/projects_17'         : (BuildContext context) => const MainSplitWidgetExample(),
-    '/projects_18'         : (BuildContext context) => const MainPersistentTabBarExample(),
-    '/projects_19'         : (BuildContext context) => const MainCollapsingToolbarExample(),
-    '/projects_20'         : (BuildContext context) => const MainFetchDataExample(),
-    '/projects_21'         : (BuildContext context) => const TwitterProfilePageExample(),
-    '/projects_22'         : (BuildContext context) => const LikeButtonExampleProject(),
-    '/projects_23'         : (BuildContext context) => const SlidableTileProjectExample(),
-    '/projects_24'         : (BuildContext context) => const BottomTabbarProjectExample(),
-    '/projects_25'         : (BuildContext context) => const HidableBtmbarExampleProject(),
-    '/projects_26'         : (BuildContext context) => const DialogsAndTimeExampleProject(),
-    '/projects_27'         : (BuildContext context) => const BottomNavigationBarProjectExample(),
-    '/projects_28'         : (BuildContext context) => const AnimationsPagesExampleProjects(),
     
     
     

@@ -391,16 +391,11 @@ const List<NavigationDestination> appBarDestinations = [
   ),
   NavigationDestination(
     tooltip: "",
-    icon: Icon(Icons.api_rounded),
-    label: 'Projects',
-    selectedIcon: Icon(Icons.api_rounded),
-  ),
-  NavigationDestination(
-    tooltip: "",
     icon: Icon(Icons.widgets),
-    label: 'Tutorial',
+    label: 'Widgets',
     selectedIcon: Icon(Icons.widgets),
   ),
+  
 ];
 
 final List<NavigationRailDestination> navRailDestinations = appBarDestinations
