@@ -36,37 +36,9 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-
-  # Use to project 5
-  flutter_barcode_scanner: any
-
-  # Use to project 12
-  readmore: ^2.2.0
-
-  # Use to project 13
-  get:
-  get_storage:
-
-  # Use to project 18
-  http:
-
-  # Use to project 22
-  like_button:
-
-  # Use to project 23
-  flutter_slidable:
-
-
-
-  # Use to project 25
-  hidable:
-
-  # Use to project 26
-  intl:
-
-  # Use to project 28
+  
   url_launcher:
-  animations:
+
 
 dev_dependencies:
   flutter_test:
