@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class RowColumnExample extends StatelessWidget {
   const RowColumnExample({super.key});
@@ -6,7 +7,17 @@ class RowColumnExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Row And Column')),
+      appBar: AppBar(title: const Text('Row And Column'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/139_row_and_column_example.dart'),
+              );
+            },
+          ),
+        ],),
       body: const Center(
         child: RowColExample(),
       ),

@@ -21,7 +21,7 @@ class PhysicsCardDragDemo extends StatelessWidget {
             onPressed: () {
               launchUrl(
                 Uri.parse(
-                    'https://github.com/omarSuarezRodriguez/flutter_apps_with_package/blob/main/lib/src/basics_screen/pages/18_physics_card_drag.dart'),
+                    'https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/18_physics_card_drag.dart'),
               );
             },
           ),

@@ -48,7 +48,7 @@ class _AnimatedPositionedDemoState extends State<AnimatedPositionedDemo> {
           onPressed: () {
             launchUrl(
               Uri.parse(
-                  'https://github.com/omarSuarezRodriguez/flutter_apps_with_package/blob/main/lib/src/basics_screen/pages/11_animated_positioned.dart'),
+                  'https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/11_animated_positioned.dart'),
             );
           },
         ),

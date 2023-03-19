@@ -15,7 +15,7 @@ class ExpandedPageExample extends StatelessWidget {
             onPressed: () {
               launchUrl(
                 Uri.parse(
-                    'https://github.com/omarSuarezRodriguez/flutter_apps_with_package/blob/main/lib/src/basics_screen/pages/64_expanded_page_example.dart'),
+                    'https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/64_expanded_page_example.dart'),
               );
             },
           ),

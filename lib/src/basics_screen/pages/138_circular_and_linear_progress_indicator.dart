@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class CircularAndLinearProgressIndicator extends StatelessWidget {
   const CircularAndLinearProgressIndicator({super.key});
@@ -6,7 +7,17 @@ class CircularAndLinearProgressIndicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Circular And Linear Progress Indicator')),
+      appBar: AppBar(title: const Text('Circular And Linear Progress Indicator'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/138_circular_and_linear_progress_indicator.dart'),
+              );
+            },
+          ),
+        ],),
       body: const Center(
         child: StatefulWidgetsExample(),
       ),

@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class LRefreshIndicatorExample extends StatelessWidget {
   const LRefreshIndicatorExample({super.key});
@@ -8,7 +9,17 @@ class LRefreshIndicatorExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Refresh Indicator')),
+      appBar: AppBar(title: const Text('Refresh Indicator'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/123_refresh_indicator_example.dart'),
+              );
+            },
+          ),
+        ],),
       body: Center(
         child: LRefreshIndicator(),
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MaterialBannerExample extends StatelessWidget {
   const MaterialBannerExample({super.key});
@@ -6,7 +7,19 @@ class MaterialBannerExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Material Banner')),
+      appBar: AppBar(
+        title: const Text('Material Banner'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/73_material_banner_example.dart'),
+              );
+            },
+          ),
+        ],
+      ),
       body: MyHomePage(),
     );
   }
@@ -17,7 +30,6 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-
       child: ElevatedButton(
         child: const Text('Open'),
         onPressed: () {
@@ -30,22 +42,15 @@ class MyHomePage extends StatelessWidget {
               backgroundColor: Colors.white12,
               actions: <Widget>[
                 TextButton(
-                  onPressed: () {
-                    ScaffoldMessenger.of(context).hideCurrentMaterialBanner();
-                  },
-                 child: const Text('Dimiss'))
+                    onPressed: () {
+                      ScaffoldMessenger.of(context).hideCurrentMaterialBanner();
+                    },
+                    child: const Text('Dimiss'))
               ],
             ),
           );
         },
       ),
-
-
-
     );
   }
-
- 
- 
-
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class LPageViewExample extends StatelessWidget {
   const LPageViewExample({super.key});
@@ -6,7 +7,17 @@ class LPageViewExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Page View')),
+      appBar: AppBar(title: const Text('Page View'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/92_page_view_example.dart'),
+              );
+            },
+          ),
+        ],),
       body: const Center(
         child: LPageView(),
       ),

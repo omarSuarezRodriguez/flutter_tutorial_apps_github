@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class LSwitchListTileExample extends StatelessWidget {
   const LSwitchListTileExample({super.key});
@@ -6,7 +7,17 @@ class LSwitchListTileExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Switch List Tile')),
+      appBar: AppBar(title: const Text('Switch List Tile'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/110_switch_list_tile_example.dart'),
+              );
+            },
+          ),
+        ],),
       body: const Center(
         child: LSwitchListTile(),
       ),

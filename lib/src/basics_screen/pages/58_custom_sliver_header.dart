@@ -16,7 +16,7 @@ class CustomSliverHeaderExample extends StatelessWidget {
             icon: Icon(Icons.code),
             onPressed: () {
               launchUrl(
-                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_apps_with_package/blob/main/lib/src/basics_screen/pages/58_custom_sliver_header.dart'),
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/58_custom_sliver_header.dart'),
               );
             },
           ),

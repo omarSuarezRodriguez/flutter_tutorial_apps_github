@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class LTabPageSelectorExample extends StatelessWidget {
   const LTabPageSelectorExample({super.key});
@@ -6,7 +7,17 @@ class LTabPageSelectorExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Tab Page Selector')),
+      appBar: AppBar(title: const Text('Tab Page Selector'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/122_tab_page_selector_example.dart'),
+              );
+            },
+          ),
+        ],),
       body: const Center(
         child: LTabPageSelector(),
       ),

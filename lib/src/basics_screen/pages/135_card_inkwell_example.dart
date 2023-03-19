@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class CardExampleBasics extends StatelessWidget {
   const CardExampleBasics({super.key});
@@ -6,7 +7,17 @@ class CardExampleBasics extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Card and Inkwell')),
+      appBar: AppBar(title: const Text('Card and Inkwell'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/135_card_inkwell_example.dart'),
+              );
+            },
+          ),
+        ],),
       body: const Center(
         child: CardExample(),
       ),

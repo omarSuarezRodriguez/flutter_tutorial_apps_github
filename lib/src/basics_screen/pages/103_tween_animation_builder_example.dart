@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class LTweenAnimationBuilderExample extends StatelessWidget {
   const LTweenAnimationBuilderExample({super.key});
@@ -6,7 +7,17 @@ class LTweenAnimationBuilderExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Tween Animation Builder')),
+      appBar: AppBar(title: const Text('Tween Animation Builder'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/103_tween_animation_builder_example.dart'),
+              );
+            },
+          ),
+        ],),
       body: const Center(
         child: LTweenAnimationBuilder(),
       ),

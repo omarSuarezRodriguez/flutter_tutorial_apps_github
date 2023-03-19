@@ -49,7 +49,7 @@ class _TweenDemoState extends State<TweenDemo>
             onPressed: () {
               launchUrl(
                 Uri.parse(
-                    'https://github.com/omarSuarezRodriguez/flutter_apps_with_package/blob/main/lib/src/basics_screen/pages/04_tweens.dart'),
+                    'https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/04_tweens.dart'),
               );
             },
           ),

@@ -1,5 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class TextFormFieldExampleTwo extends StatelessWidget {
   const TextFormFieldExampleTwo({super.key});
@@ -7,7 +8,17 @@ class TextFormFieldExampleTwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Text Form Field')),
+      appBar: AppBar(title: const Text('Text Form Field'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/134_text_form_field_example.dart'),
+              );
+            },
+          ),
+        ],),
       body: const Center(
         child: TextFormFieldExample(),
       ),

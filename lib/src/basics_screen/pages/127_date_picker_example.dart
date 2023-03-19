@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SDatePickerExample extends StatelessWidget {
   const SDatePickerExample({super.key});
@@ -6,7 +7,17 @@ class SDatePickerExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Date Picker')),
+      appBar: AppBar(title: const Text('Date Picker'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/127_date_picker_example.dart'),
+              );
+            },
+          ),
+        ],),
       body: const Center(
         child: SDatePicker(),
       ),

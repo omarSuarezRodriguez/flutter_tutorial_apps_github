@@ -42,7 +42,7 @@ class _RepeatingAnimationDemoState extends State<RepeatingAnimationDemo>
             icon: Icon(Icons.code),
             onPressed: () {
               launchUrl(
-                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_apps_with_package/blob/main/lib/src/basics_screen/pages/19_repeating_animation.dart'),
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/19_repeating_animation.dart'),
               );
             },
           ),

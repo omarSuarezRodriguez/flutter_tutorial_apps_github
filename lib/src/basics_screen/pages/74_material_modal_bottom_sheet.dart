@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MaterialBottomSheetExample extends StatelessWidget {
   const MaterialBottomSheetExample({super.key});
@@ -6,7 +7,19 @@ class MaterialBottomSheetExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Material Banner')),
+      appBar: AppBar(
+        title: const Text('Material Banner'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/74_material_modal_bottom_sheet.dart'),
+              );
+            },
+          ),
+        ],
+      ),
       body: MyHomePage(),
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class LColorFilteredExample extends StatelessWidget {
   const LColorFilteredExample({super.key});
@@ -6,7 +7,17 @@ class LColorFilteredExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Color Filtered')),
+      appBar: AppBar(title: const Text('Color Filtered'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/99_color_filtered_example.dart'),
+              );
+            },
+          ),
+        ],),
       body: const Center(
         child: LColorFiltered(),
       ),

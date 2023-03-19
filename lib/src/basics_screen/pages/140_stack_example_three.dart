@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class StackExampleThree extends StatelessWidget {
   const StackExampleThree({super.key});
@@ -6,7 +7,17 @@ class StackExampleThree extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Stack Example')),
+      appBar: AppBar(title: const Text('Stack Example'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/140_stack_example_three.dart'),
+              );
+            },
+          ),
+        ],),
       body: const Center(
         child: StackExample(),
       ),

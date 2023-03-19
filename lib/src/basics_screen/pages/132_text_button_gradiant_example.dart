@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class STextButtonExample extends StatelessWidget {
   const STextButtonExample({super.key});
@@ -6,7 +7,17 @@ class STextButtonExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Text Button Gradiant')),
+      appBar: AppBar(title: const Text('Text Button Gradiant'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/132_text_button_gradiant_example.dart'),
+              );
+            },
+          ),
+        ],),
       body: const Center(
         child: STextButton(),
       ),

@@ -14,7 +14,7 @@ class SelectableTextExample extends StatelessWidget {
             icon: Icon(Icons.code),
             onPressed: () {
               launchUrl(
-                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_apps_with_package/blob/main/lib/src/basics_screen/pages/34_selectable_text.dart'),
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/34_selectable_text.dart'),
               );
             },
           ),

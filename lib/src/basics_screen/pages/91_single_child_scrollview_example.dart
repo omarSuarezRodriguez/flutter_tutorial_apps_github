@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class LSingleChildScrollViewExample extends StatelessWidget {
   const LSingleChildScrollViewExample({super.key});
@@ -6,7 +7,17 @@ class LSingleChildScrollViewExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Single Child ScrollView')),
+      appBar: AppBar(title: const Text('Single Child ScrollView'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/91_single_child_scrollview_example.dart'),
+              );
+            },
+          ),
+        ],),
       body: const Center(
         child: LSingleChildScrollView(),
       ),

@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AnimatedContainerExample extends StatelessWidget {
   const AnimatedContainerExample({super.key});
@@ -7,7 +7,19 @@ class AnimatedContainerExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Animated Container')),
+      appBar: AppBar(
+        title: const Text('Animated Container'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/79_animated_container_example.dart'),
+              );
+            },
+          ),
+        ],
+      ),
       body: LAnimatedContainer(),
     );
   }
@@ -47,4 +59,3 @@ class _LAnimatedContainerState extends State<LAnimatedContainer> {
     );
   }
 }
-

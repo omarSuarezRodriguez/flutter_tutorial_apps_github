@@ -58,7 +58,7 @@ class _AnimatedContainerDemoState extends State<AnimatedContainerDemo> {
             onPressed: () {
               launchUrl(
                 Uri.parse(
-                    'https://github.com/omarSuarezRodriguez/flutter_apps_with_package/blob/main/lib/src/basics_screen/pages/05_animated_container.dart'),
+                    'https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/05_animated_container.dart'),
               );
             },
           ),

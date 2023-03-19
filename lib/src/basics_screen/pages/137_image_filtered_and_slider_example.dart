@@ -1,13 +1,25 @@
 import 'package:flutter/material.dart';
 import 'dart:ui';
 
+import 'package:url_launcher/url_launcher.dart';
+
 class ImageFilteredExampleBasics extends StatelessWidget {
   const ImageFilteredExampleBasics({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Image Filtered And Slider')),
+      appBar: AppBar(title: const Text('Image Filtered And Slider'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/137_image_filtered_and_slider_example.dart'),
+              );
+            },
+          ),
+        ],),
       body: const Center(
         child: ImageFilteredExample(),
       ),

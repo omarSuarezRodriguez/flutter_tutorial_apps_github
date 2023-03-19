@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class LFlexibleExample extends StatelessWidget {
   const LFlexibleExample({super.key});
@@ -6,7 +7,17 @@ class LFlexibleExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Flexible Example')),
+      appBar: AppBar(title: const Text('Flexible Example'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/109_flexible_example.dart'),
+              );
+            },
+          ),
+        ],),
       body: const Center(
         child: LFlexible(),
       ),

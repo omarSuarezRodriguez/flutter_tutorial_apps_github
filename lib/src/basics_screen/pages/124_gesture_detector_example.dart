@@ -1,13 +1,25 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
+import 'package:url_launcher/url_launcher.dart';
+
 class LGestureDetectorExample extends StatelessWidget {
   const LGestureDetectorExample({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Gesture Detector')),
+      appBar: AppBar(title: const Text('Gesture Detector'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/124_gesture_detector_example.dart'),
+              );
+            },
+          ),
+        ],),
       body: const Center(
         child: LGestureDetector(),
       ),

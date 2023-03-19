@@ -14,7 +14,7 @@ class OpacityExamp extends StatelessWidget {
             icon: Icon(Icons.code),
             onPressed: () {
               launchUrl(
-                Uri.parse('link'),
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/23_opacity_example.dart'),
               );
             },
           ),

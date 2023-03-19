@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class FutureBuilderExampleBasics extends StatelessWidget {
   const FutureBuilderExampleBasics({super.key});
@@ -8,7 +9,17 @@ class FutureBuilderExampleBasics extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Future Builder')),
+      appBar: AppBar(title: const Text('Future Builder'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/144_future_builder_example.dart'),
+              );
+            },
+          ),
+        ],),
       body: const Center(
         child: FutureBuilderExample(),
       ),

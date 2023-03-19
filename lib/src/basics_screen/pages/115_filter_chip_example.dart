@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class LFilterChipExample extends StatelessWidget {
   const LFilterChipExample({super.key});
@@ -6,7 +7,17 @@ class LFilterChipExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Filter Chip')),
+      appBar: AppBar(title: const Text('Filter Chip'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/115_filter_chip_example.dart'),
+              );
+            },
+          ),
+        ],),
       body: const Center(
         child: LFilterChip(),
       ),

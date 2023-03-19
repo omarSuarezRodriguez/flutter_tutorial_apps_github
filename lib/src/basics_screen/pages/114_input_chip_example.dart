@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class LInputChipExample extends StatelessWidget {
   const LInputChipExample({super.key});
@@ -6,7 +7,17 @@ class LInputChipExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Input Chip')),
+      appBar: AppBar(title: const Text('Input Chip'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/114_input_chip_example.dart'),
+              );
+            },
+          ),
+        ],),
       body: const Center(
         child: LInputChip(),
       ),

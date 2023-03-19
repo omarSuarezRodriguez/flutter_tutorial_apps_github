@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AnimatedSwitcherExample extends StatelessWidget {
   const AnimatedSwitcherExample({super.key});
@@ -8,6 +9,16 @@ class AnimatedSwitcherExample extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Conditional If Expression'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/71_animated_switcher_example.dart'),
+              );
+            },
+          ),
+        ],
       ),
       body: MyHomePage(),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class GridImageExample extends StatelessWidget {
   const GridImageExample({super.key});
@@ -6,7 +7,19 @@ class GridImageExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Animated CossFade')),
+      appBar: AppBar(
+        title: const Text('Animated CossFade'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/77_grid_image_example.dart'),
+              );
+            },
+          ),
+        ],
+      ),
       body: MyHomePage(),
     );
   }

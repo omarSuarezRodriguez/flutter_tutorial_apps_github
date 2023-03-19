@@ -20,7 +20,7 @@ class PageRouteBuilderDemo extends StatelessWidget {
             onPressed: () {
               launchUrl(
                 Uri.parse(
-                    'https://github.com/omarSuarezRodriguez/flutter_tutorial_final_without_packages/blob/main/lib/src/basics_screen/pages/02_page_route_builder.dart'),
+                    'https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/02_page_route_builder.dart'),
               );
             },
           ),

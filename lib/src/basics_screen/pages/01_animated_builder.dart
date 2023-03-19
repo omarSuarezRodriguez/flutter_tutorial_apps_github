@@ -42,7 +42,7 @@ class _AnimatedBuilderDemoState extends State<AnimatedBuilderDemo>
             icon: Icon(Icons.code),
             onPressed: () {
               launchUrl(
-                Uri.parse('link'),
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/01_animated_builder.dart'),
               );
             },
           ),

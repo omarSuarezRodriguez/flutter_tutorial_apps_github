@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class LRadioListTileExample extends StatelessWidget {
   const LRadioListTileExample({super.key});
@@ -6,7 +7,17 @@ class LRadioListTileExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Radio List Tile')),
+      appBar: AppBar(title: const Text('Radio List Tile'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.code),
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/108_radio_list_tile_example.dart'),
+              );
+            },
+          ),
+        ],),
       body: const Center(
         child: LRadioListTile(),
       ),

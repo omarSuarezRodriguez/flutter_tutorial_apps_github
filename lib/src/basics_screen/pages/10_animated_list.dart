@@ -15,7 +15,7 @@ class AnimatedListDemoExample extends StatelessWidget {
             onPressed: () {
               launchUrl(
                 Uri.parse(
-                    'https://github.com/omarSuarezRodriguez/flutter_apps_with_package/blob/main/lib/src/basics_screen/pages/10_animated_list.dart'),
+                    'https://github.com/omarSuarezRodriguez/flutter_tutorial_apps_github/blob/main/lib/src/basics_screen/pages/10_animated_list.dart'),
               );
             },
           ),
