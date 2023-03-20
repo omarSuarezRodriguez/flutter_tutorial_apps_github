@@ -1,4 +1,4 @@
-Privacy Policy
+﻿Privacy Policy
 
 
 
@@ -6,7 +6,7 @@ Privacy Policy
 
 Privacy Policy
 
-Omar Suarez built the Flutter Tutorial 2023 app as a Free app. This SERVICE is provided by Johannes Milke at no cost and is intended for use as is.
+Omar Suarez built the Flutter Tutorial 2023 app as a Free app. This SERVICE is provided by Omar Suarez at no cost and is intended for use as is.
 
 This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.
 
@@ -52,7 +52,7 @@ I may update our Privacy Policy from time to time. Thus, you are advised to revi
 
 
 
-This policy is effective as of 2021-04-03
+This policy is effective as of 2023-03-20
 
 
 
